@@ -1,0 +1,277 @@
+				@font-face
+				{font-family: 'oliver'; src: url('fonts/oliver.ttf');}
+				@font-face
+				{font-family:'lato'; src: url('fonts/lato.ttf');}
+
+
+
+				*{
+					font-family: lato;
+					margin: 0px;
+					padding: 0px;
+					background-repeat: no-repeat;
+				}
+				h1{
+					margin: 10PX;
+					font-size: 150%;
+					text-align: center;
+					font-family: lato;
+					color: black;
+				}
+				p{
+					margin: 30px;
+					text-indent: 20px;
+					color: white;
+
+				}
+				input{
+					font-size: 1.2em;
+					border-top: none;
+					border-left: none;
+					border-right: none;
+					border-bottom: none;
+					border-bottom: 2px solid #2ecc71;
+					background-color: none;
+					width: 100%;
+					height: 7%;
+					padding: 10px;
+					border-radius: 10%;
+				}
+				input:focus{
+					box-shadow: 1px 1px 20px white;
+					transition: .5s;
+				}
+				::-webkit-input-placeholder {
+				  color: #d0d0d0;
+				}
+				input[type="submit"]{
+					background-color: #2ecc71;
+					color: white;
+					border: none;
+					width: 5%;
+					margin: 1%;
+					font-weight: bold;
+				}
+				input[type="submit"]:hover{
+					background-color: white;
+					color: #2ecc71;
+					transition: 0.3s;
+					text-decoration: blink;
+					border: 1px solid #2ecc71;
+				}
+
+				/* --------------MENU-------------- */
+				.menu{
+					background-color: rgba(255,255,255,0);
+					font-size: 200%;
+					padding-bottom: 1.5%;
+					padding-top: 1.5%;
+					padding-left: 10%;
+					width: 100%;
+					position: fixed;
+					margin-top: -5.5%;
+					background-image: url("img/menu.png");
+					background-size: 100%;
+					height: 10%;
+				}
+
+				a{color: #9e9e9e; text-decoration: none; font-family: oliver; margin-left: 3%;}
+				a:hover{color: black;}	
+
+				.log
+				{margin-left: 35%;}
+				.logs 
+				{margin-left: 20%;}
+				.ae
+				{margin-left: 0%;}
+
+				/* --------------CABEÇALHO-------------- */
+				.cab
+				{margin-top: 5%; background-image: url("img/cab.png"); background-size: 100%; height: 42%; margin-bottom: 5%;} 
+
+
+
+				.login
+				{margin-left: -45%;}
+				.cadastro
+				{margin-left: 45%; margin-top: -15.5%; }
+				.cadastro input
+				{border-bottom: 2px solid #f1c40f;}
+				.cadastro input[type="submit"]
+				{background-color: #f1c40f; width: 120px;}
+				.cadastro input[type="submit"]:hover
+				{background-color: white; color: #f1c40f; border: 1px solid #f1c40f;}
+
+				form{}
+
+				
+				/* --------------RODAPÉ-------------- */
+				.pe
+				{background-color: black; padding-top: 2%; padding-bottom: 2%; color: white; margin-top: 30%;}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1440px){
+
+	.menu{
+		background-color: rgba(255,255,255,0);
+		font-size: 200%;
+		padding-bottom: 1.5%;
+		padding-top: 1.5%;
+		padding-left: 10%;
+		width: 100%;
+		position: fixed;
+		margin-top: -5.5%;
+		background-image: url("img/menu.png");
+		background-size: 100%;
+		height: 10%;
+	}
+	a{font-size: 30px; margin-left: 2%;}
+	.log
+	{margin-left: 37%;}
+	.logs 
+	{margin-left: 32%;}
+	h1
+	{font-size: 30px;}
+	p
+	{font-size: 13px;}
+	*
+	{font-size: 13px;}
+	.sobre
+	{height: 65%;}
+
+}
+
+@media screen and (max-width: 1280px){
+
+	.menu{
+		background-color: rgba(255,255,255,0);
+		font-size: 200%;
+		padding-bottom: 1.5%;
+		padding-top: 1.5%;
+		padding-left: 10%;
+		width: 100%;
+		position: fixed;
+		margin-top: -5.5%;
+		background-image: url("img/menu.png");
+		background-size: 100%;
+		height: 10%;
+	}
+	a{font-size: 30px; margin-left: 2%;}
+	.log
+	{margin-left: 33%;}
+	.logs 
+	{margin-left: 27%;}
+	h1
+	{font-size: 30px;}
+	p
+	{font-size: 13px;}
+	*
+	{font-size: 13px;}
+	.sobre
+	{height: 65%;}
+
+}
+
+@media screen and (max-width: 1024px){
+
+	.menu{
+		background-color: rgba(255,255,255,0);
+		font-size: 200%;
+		padding-bottom: 1.5%;
+		padding-top: 1.5%;
+		padding-left: 10%;
+		width: 100%;
+		position: fixed;
+		margin-top: -5.5%;
+		background-image: url("img/menu.png");
+		background-size: 100%;
+		height: 10%;
+	}
+	a{font-size: 25px; margin-left: 2%;}
+	.log
+	{margin-left: 25%;}
+	.logs 
+	{margin-left: 20%;}
+	h1
+	{font-size: 30px;}
+	p
+	{font-size: 13px;}
+	*
+	{font-size: 13px;}
+	.sobre
+	{height: 65%;}
+
+}
+
+@media screen and (max-width: 800px){
+
+	.menu{
+		background-color: rgba(255,255,255,0);
+		font-size: 200%;
+		padding-bottom: 1.5%;
+		padding-top: 2%;
+		padding-left: 10%;
+		width: 100%;
+		position: fixed;
+		margin-top: -5.5%;
+		background-image: url("img/menu.png");
+		background-size: 100%;
+		height: 10%;
+	}	
+	a{font-size: 20px; margin-left: 1%;}
+	.log
+	{margin-left: 30%;}
+	.logs 
+	{margin-left: 20%;}
+	h1
+	{font-size: 15px;}
+	p
+	{font-size: 5px;}
+	*
+	{font-size: 5px;}
+	.sobre
+	{height: 50%;}
+
+}
+
+
+@media screen and (max-width: 400px){
+
+	.menu{
+		background-color: rgba(255,255,255,0);
+		padding-bottom: 1.5%;
+		padding-top: 1%;
+		padding-left: 10%;
+		width: 100%;
+		position: fixed;
+		margin-top: -5.5%;
+		background-image: url("img/menu.png");
+		background-size: 100%;
+		height: 10%;
+	}	
+	a{font-size: 10px; margin-left: 1%;}
+	.log
+	{margin-left: 20%;}
+	.logs 
+	{margin-left: 10%;}
+	h1
+	{font-size: 5px;}
+	p
+	{font-size: 1px;}
+	*
+	{font-size: 1px;}
+	.sobre
+	{height: 20%;}
+	.cab
+	{height: 15%;}
+
+}

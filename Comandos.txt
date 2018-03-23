@@ -1,0 +1,90 @@
+CREATE DATABASE LOJA;
+USE LOJA;
+
+
+CREATE TABLE produtos(
+  id INT(2) AUTO_INCREMENT,
+  nome VARCHAR(2) NOT NULL,
+  preco DECIMAL(10,2) NOT NULL,
+  estoque INT(10) NOT NULL,
+  PRIMARY KEY(id)
+);
+
+CREATE TABLE pedidos(
+ id INT(2) AUTO_INCREMENT,
+ nome VARCHAR(30) NOT NULL,
+ cpf VARCHAR(30) NOT NULL,
+ cidade VARCHAR(30) NOT NULL,
+ endereco VARCHAR(40) NOT NULL,
+ numero VARCHAR(40) NOT NULL,
+ bairro VARCHAR(40) NOT NULL,
+ quantidade int(100) NOT NULL,
+ cep VARCHAR(20) NOT NULL,
+ numero_cartao VARCHAR(20) NOT NULL,
+ pagamento VARCHAR(30) NOT NULL,
+ parcelas INT(255) NOT NULL,
+ produtos VARCHAR(2) NOT NULL,
+ FOREIGN KEY(produtos) references produtos(nome),
+ PRIMARY KEY(id)
+ );
+
+CREATE TABLE usuarios(
+ id INT(2) AUTO_INCREMENT,
+ nome VARCHAR(30) NOT NULL,
+ sobrenome VARCHAR(30) NOT NULL,
+ senha VARCHAR(30) NOT NULL,
+ email VARCHAR(50) NOT NULL UNIQUE,
+ cpf VARCHAR(14) NOT NULL,
+ nascimento VARCHAR(10) NOT NULL,
+ telefone VARCHAR(20) NOT NULL,
+ PRIMARY KEY(id)
+);
+
+insert into produtos(id,nome, preco, estoque)
+values(0,'m1',50.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'m2', 70.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'m3', 75.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'m4', 65.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'m5', 35.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'m6', 20.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'m7', 80.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'m8', 90.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'f1', 50.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'f2', 25.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'f3', 60.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'f4', 80.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'f5', 20.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'f6', 35.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'f7', 30.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'f8', 25.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'a1', 20.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'a2', 15.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'a3', 25.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'a4', 25.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'a5', 45.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'a6', 25.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'a7',30.00,100);
+insert into produtos(id,nome, preco, estoque)
+values(0,'a8',30.00,100);

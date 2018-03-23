@@ -1,0 +1,86 @@
+@font-face
+{font-family: 'oliver'; src: url('../fonts/oliver.ttf');}
+@font-face
+{font-family:'lato'; src: url('../fonts/lato.ttf');}
+
+
+
+*{
+	font-family: lato;
+	margin: 0px;
+	padding: 0px;
+	color: #a3a3a3;
+	background-repeat: no-repeat;
+}
+h1{
+	font-size: 40px;
+	text-align: center;
+	color: #00dfff;
+	font-family: oliver;
+}
+input{
+	font-size: 1.2em;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-bottom: 2px solid #00dfff;
+	background-color: none;
+	width: 31.5%;
+	height: 7%;
+	border-radius: 10%;
+	padding: 10px;
+}
+input:focus{
+	box-shadow: 1px 1px 20px white;
+	transition: .5s;
+}
+::-webkit-input-placeholder {
+  color: #d0d0d0;
+}
+input[type="submit"]{
+	background-color: #00dfff;
+	color: white;
+	border: none;
+	border-radius: 0%;
+}
+input[type="submit"]:hover{
+	background-color: white;
+	color: #00dfff;
+	transition: 0.3s;
+	border: 2px solid #00dfff;
+}
+
+
+
+
+/*-------------COMPRA-----------------*/
+.cm1
+{}
+
+
+/*-------------PEDIDOS-----------------*/
+.pedido
+{margin-left: 10%; float: left; width: 35%;font-size: 20px;}
+
+.f
+{width: 90%; margin-bottom: 3%;}
+.f:hover
+{transition: .5s; width: 100%;}
+
+/*-------------INF-----------------*/
+.inf
+{margin-right: 15%; float: right; width: 40%; }
+.inf table
+{width: 100%;}
+.inf input
+{width: 90%;}
+.inf input[type="submit"]
+{width: 30%; float: right; margin: 3%;}
+.inf center
+{color: #14dd04;}
+.c
+{color: #a3a3a3;}
+
+select
+{padding: 5px; margin-top: 10px;}
