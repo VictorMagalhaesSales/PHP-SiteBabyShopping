@@ -24,7 +24,8 @@ session_start();
 			<a href="meninas.php">MENINAS</a>
 			<a href="acessorio.php">ACESSÓRIOS</a>
 			<?php 
-				if(isset($_SESSION['email'])){
+				@$teste = $_SESSION['email'];
+				if( !is_null($teste)){
 					echo "<a class='logs'>Olá Sr(a) ".utf8_encode($_SESSION['sobrenome'])."</a> | <a class='ae' href='sair.php'>SAIR</a> <a class='car' style='font-size: 20px; color: black;' href='carrinho.php'><img src='img/car.png' width='30px'></a>";
 				}else{
 					echo "<a href='login.php' class='log'>Login</a>";
@@ -40,14 +41,6 @@ session_start();
 			<marquee direction="left"  scrollDelay="300"><img src="img/n3.png" width="4.4%" id="n4"></marquee>
 			<marquee direction="right"  scrollDelay="100"><img src="img/n3.png" width="9.4%" id="n5"></marquee>
 			<marquee direction="left"  scrollDelay="500"><img src="img/n1.png" width="10.7%" id="n6"></marquee>
-
-
-			<!-- <marquee direction="left"  scrollDelay="200"><img src="img/n1.png" width="1.9%" id="n1"></marquee>
-			<marquee direction="right"  scrollDelay="200"><img src="img/n2.png" width="1.9%" id="n2"></marquee>
-			<marquee direction="right"  scrollDelay="350"><img src="img/n2.png" width="6.3%" id="n3"></marquee>
-			<marquee direction="left"  scrollDelay="300"><img src="img/n3.png" width="4.4%" id="n4"></marquee>
-			<marquee direction="right"  scrollDelay="400"><img src="img/n3.png" width="9.4%" id="n5"></marquee>
-			<marquee direction="left"  scrollDelay="500"><img src="img/n1.png" width="10.7%" id="n6"></marquee> -->
 		</div>
 		<center>
 		<div class="corpo">

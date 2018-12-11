@@ -23,8 +23,8 @@ CREATE TABLE pedidos(
  numero_cartao VARCHAR(20) NOT NULL,
  pagamento VARCHAR(30) NOT NULL,
  parcelas INT(255) NOT NULL,
- produtos VARCHAR(2) NOT NULL,
- FOREIGN KEY(produtos) references produtos(nome),
+ produtos INT(2) NOT NULL,
+ FOREIGN KEY(produtos) references produtos(id),
  PRIMARY KEY(id)
  );
 
@@ -88,5 +88,3 @@ insert into produtos(id,nome, preco, estoque)
 values(0,'a7',30.00,100);
 insert into produtos(id,nome, preco, estoque)
 values(0,'a8',30.00,100);
-
-adicionei e sai correndo
